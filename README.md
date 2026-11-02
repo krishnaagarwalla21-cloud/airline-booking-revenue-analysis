@@ -1,57 +1,127 @@
-
 # Airline Booking & Revenue Analytics
 
-**Project Status:** In Progress
+An end-to-end data analytics project exploring airline bookings, ticket sales, payment methods, refunds, route performance, and fare distribution using SQL, Python, and Power BI.
 
 ## Project Overview
 
-This project analyses a synthetic airline reservation database to explore booking patterns, ticket values, flight activity, payments, and refunds.
+The objective of this project is to analyse airline booking and financial data to identify booking trends, understand revenue performance, compare route and cabin-class activity, and evaluate payment and refund patterns.
 
-The goal is to use data analysis to answer practical business questions and present findings through clear visualisations and a business-focused dashboard.
-
-## Business Questions
-
-- How does booking activity change over time?
-- Which routes and airports have the highest flight activity?
-- How does ticket value vary across cabin classes?
-- What patterns can be identified in booking payments and refunds?
-- Which key performance indicators can help monitor airline business performance?
+The project uses a synthetic airline database and demonstrates a practical analytics workflow, from data validation and SQL querying to Python visualisation and Power BI reporting.
 
 ## Tools & Technologies
 
-- SQL — data querying, joins, aggregations, and business analysis
-- Python — data preparation, validation, and exploratory data analysis
-- Power BI — interactive dashboards and KPI visualisation
+- **SQL (SQLite):** Data exploration, joins, aggregations, filtering, and business analysis.
+- **Python:** Pandas and Matplotlib for data analysis and visualisation.
+- **Power BI:** KPI reporting and interactive dashboard development.
+- **GitHub:** Project documentation and version control.
 
-## Project Workflow
+## Dataset Overview
 
-1. Explore the dataset and understand its tables.
-2. Validate the data and identify potential quality issues.
-3. Write SQL queries to answer the business questions.
-4. Use Python for data preparation and exploratory analysis.
-5. Develop an interactive Power BI dashboard.
-6. Document findings and actionable business recommendations.
+The analysis uses a synthetic airline database containing multiple related tables.
 
-## Dataset
+| Table | Records |
+|---|---:|
+| Bookings | 35,000 |
+| Tickets | 70,000 |
+| Ticket Flights | 100,000 |
+| Flights | 300 |
+| Flight Instances | 1,000 |
+| Payments | 35,000 |
+| Refunds | 500 |
 
-Source: [Airline Sample Database](https://databasesample.com/datasets/airline-sample-database)
+All data is synthetic and intended for portfolio and educational purposes.
 
-The project uses synthetic airline data. Findings will describe patterns in this sample dataset and should not be interpreted as actual airline industry performance.
+## Analysis Performed
 
-## Repository Contents
+### 1. Booking Analysis
+- Analysed booking volume and monthly booking trends.
+- Checked missing values and duplicate records.
+- Examined booking date patterns.
 
-Project files, SQL queries, Python analysis, dashboard files, and documented findings will be added as development progresses.
+### 2. Revenue & Payment Analysis
+- Calculated gross successful payments.
+- Compared payment methods.
+- Reconciled payments, refunds, and net revenue.
+
+### 3. Refund Analysis
+- Analysed refund amounts and refund reasons.
+- Checked whether refunds were linked to successful payments.
+
+### 4. Route & Airline Analysis
+- Compared ticket activity across airlines and routes.
+- Identified high-volume airline-route combinations.
+
+### 5. Cabin-Class Analysis
+- Compared average fares across Economy, Premium Economy, Business, and First Class.
+
+## Key Findings
+
+- The dataset contains 35,000 bookings and 70,000 tickets.
+- Monthly bookings reached a peak of approximately 1,192 in March 2021.
+- Card was the most frequently used payment method.
+- Gross successful payments totalled approximately 30.94 million in dataset currency units.
+- Recorded refunds totalled approximately 265.81 thousand.
+- Net payments after recorded refunds were approximately 30.68 million.
+- Recorded refunds represented approximately 0.86% of gross successful payments.
+- Economy accounted for the largest number of ticket-flight records, while First Class had the highest average fare.
+
+*Note: Financial values are presented in the dataset's original units because no verified currency denomination is specified.*
+
 ## Power BI Dashboard
 
-The interactive analysis was developed in Power BI, covering:
+The Power BI dashboard includes:
 
-- Key Performance Indicators (KPIs)
-- Monthly Booking Trends
-- Payment Method Analysis
-- Refund Reason Analysis
-- Airline Ticket Activity
+- Total Bookings
+- Total Tickets
+- Gross Successful Payments
+- Recorded Refund Amount
+- Monthly Airline Booking Trend
+- Payment Methods Analysis
+- Refund Reasons Analysis
+- Top Airlines by Ticket Activity
 - Average Fare by Cabin Class
 
-### Dashboard Preview
+The dashboard is available as a PDF in this repository.
 
-[View the Airline Booking & Revenue Dashboard (PDF)](Airline_Booking_Revenue_Dashboard.pdf)
+## Project Structure
+
+```text
+airline-booking-revenue-analysis/
+│
+├── sql/
+│   └── SQL analysis files
+│
+├── python/
+│   └── Python analysis files
+│
+├── images/
+│   └── Project visualisations
+│
+├── Airline_Booking_Revenue_Dashboard.pdf
+│
+└── README.md
+```
+
+## Skills Demonstrated
+
+- SQL querying and relational data analysis
+- Data cleaning and validation
+- Exploratory Data Analysis (EDA)
+- Revenue reconciliation
+- Business KPI analysis
+- Data visualisation
+- Dashboard development
+- Analytical problem-solving
+
+## Project Status
+
+**Core analysis and dashboard completed.**
+
+This project demonstrates an end-to-end approach to analysing airline booking and revenue data using SQL, Python, and Power BI.
+
+## Author
+
+**Khushish Agarwalla**
+
+- GitHub: [krishnaagarwalla21-cloud](https://github.com/krishnaagarwalla21-cloud)
+- LinkedIn: [Khushish Agarwalla](https://www.linkedin.com/in/khushish-agarwalla-4369a0247/)
