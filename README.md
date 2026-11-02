@@ -41,3 +41,17 @@ The project uses synthetic airline data. Findings will describe patterns in this
 ## Repository Contents
 
 Project files, SQL queries, Python analysis, dashboard files, and documented findings will be added as development progresses.
+## Power BI Dashboard
+
+The interactive analysis was developed in Power BI, covering:
+
+- Key Performance Indicators (KPIs)
+- Monthly Booking Trends
+- Payment Method Analysis
+- Refund Reason Analysis
+- Airline Ticket Activity
+- Average Fare by Cabin Class
+
+### Dashboard Preview
+
+[View the Airline Booking & Revenue Dashboard (PDF)](Airline_Booking_Revenue_Dashboard.pdf)
